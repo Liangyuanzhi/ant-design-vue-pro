@@ -1,6 +1,6 @@
 <template>
   <div :class="wrpCls">
-    <a-badge dot="show">
+    <a-badge dot>
       <a @click="locationMessage" >
         <a-icon type="bell" />
       </a>
