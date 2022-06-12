@@ -1,10 +1,11 @@
 <template>
   <div :class="wrpCls">
-    <a-badge dot>
+    <!-- <a-badge dot>
       <a @click="locationMessage" >
         <a-icon type="bell" />
       </a>
-    </a-badge>
+    </a-badge> -->
+    <notice-icon ></notice-icon>
     <avatar-dropdown :menu="showMenu" :current-user="currentUser" :class="prefixCls" />
     <select-lang :class="prefixCls" />
   </div>
@@ -13,12 +14,14 @@
 <script>
 import AvatarDropdown from './AvatarDropdown'
 import SelectLang from '@/components/SelectLang'
+import NoticeIcon from '../NoticeIcon/NoticeIcon.vue'
 
 export default {
   name: 'RightContent',
   components: {
     AvatarDropdown,
-    SelectLang
+    SelectLang,
+    NoticeIcon
   },
   props: {
     prefixCls: {

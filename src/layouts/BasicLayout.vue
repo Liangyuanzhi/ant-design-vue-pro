@@ -44,6 +44,13 @@
     <template v-slot:rightContentRender>
       <right-content :top-menu="settings.layout === 'topmenu'" :is-mobile="isMobile" :theme="settings.theme" />
     </template>
+    <!-- multiTab -->
+    <a-layout-content>
+      <multi-tab ></multi-tab>
+      <transition name="page-transition">
+      </transition>
+    </a-layout-content>
+
     <!-- custom footer / 自定义Footer -->
     <template v-slot:footerRender>
       <global-footer />

@@ -25,6 +25,7 @@ export default {
   },
   title: '数据中台',
   pwa: false,
+  multiTab: true, // <----- 增加 multiTab 配置
   iconfontUrl: '',
   production: process.env.NODE_ENV === 'production' && process.env.VUE_APP_PREVIEW !== 'true'
 }

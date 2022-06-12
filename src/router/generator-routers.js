@@ -86,7 +86,6 @@ export const generatorDynamicRouter = token => {
     loginService
       .getCurrentUserNav(token)
       .then(res => {
-        console.log('generatorDynamicRouter response:', res)
         const { result } = res
         const menuNav = []
         const childrenNav = []
@@ -94,7 +93,6 @@ export const generatorDynamicRouter = token => {
         listToTree(result, childrenNav, 0)
         rootRouter.children = childrenNav
         menuNav.push(rootRouter)
-        console.log('menuNav', menuNav)
         const routers = generator(menuNav)
         routers.push(notFoundRouter)
         console.log('routers', routers)
