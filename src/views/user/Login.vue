@@ -114,7 +114,7 @@
           class="login-button"
           :loading="state.loginBtn"
           :disabled="state.loginBtn"
-          >{{ $t('user.login.login') }}</a-button
+        >{{ $t('user.login.login') }}</a-button
         >
       </a-form-item>
 
